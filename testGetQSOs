@@ -1,0 +1,2 @@
+#/bin/shell
+python sdss_query.py "select specObjID,z,zConf,SpecClass from SpecObj where (SpecClass=dbo.fSpecClass('QSO') or SpecClass=dbo.fSpecClass('HIZ_QSO')) and z between 2.5 and 2.7 and zConf > 0.90"

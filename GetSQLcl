@@ -1,0 +1,8 @@
+#/bin/sh
+#wget -O /home/pi/Mathematica/SDSS/sqlcl.py http://cas.sdss.org/dr7/en/help/download/sqlcl/pub/sqlcl.py
+#wget -O /home/pi/Mathematica/SDSS/sqlcl.py http://skyserver.sdss.org/dr10/en/help/download/sqlcl/pub/sqlcl.py 
+#wget -O /home/pi/Mathematica/SDSS/sqlcl.py http://cas.sdss.org/stripe82/en/help/download/sqlcl/pub/sqlcl.py
+#wget -O /home/pi/Mathematica/SDSS/sqlcl.py http://www.sdss.org.uk/dr7/en/help/download/sqlcl/pub/sqlcl.py 
+wget -O /home/pi/Mathematica/SDSS/sqlcl.py http://skyserver.sdss.org/dr12/en/help/download/sqlcl/pub/sqlcl.py 
+sed -i 's/\r//' /home/pi/Mathematica/SDSS/sqlcl.py
+chmod +x /home/pi/Mathematica/SDSS/sqlcl.py

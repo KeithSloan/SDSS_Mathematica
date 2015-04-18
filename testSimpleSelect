@@ -1,0 +1,2 @@
+#/bin/shell
+python sdss_query.py "select top 2 ra, dec, z from galaxy"

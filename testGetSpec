@@ -1,0 +1,2 @@
+#/bin/sh
+python sdss_getSpec.py 102398707621691392
