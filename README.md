@@ -4,8 +4,7 @@
   At present there is not really any error checking. It is hoped to add
   better error handling in the future
 
-  Installation
-  ============
+## Installation
 
   Install prerequiste software
 
@@ -30,8 +29,7 @@
      Make executable
         chmod +x sqlcl.py
         
-  Ram Filing system
-  =================
+## Ram Filing system
 
   Transfer between python and Mathematica takes place via temporary files
   to save wear and tear on your SD card setup a ram file system.
@@ -49,21 +47,18 @@
 
      df
 
-   Checking SDSS is working
-   ========================
+## Checking SDSS is working
 
    The following are useful to check SDSS is working
 
    http://cas.sdss.org/dr12/en/tools/quicklook/setId.asp?id=0x082802f0425a0031
    http://cas.sdss.org/dr12/en/tools/quicklook/quickobj.asp?id=588848900446814264
 
-    Useful SQL Queries
-    ==================
+## Useful SQL Queries
    
     http://cas.sdss.org/dr12/en/help/docs/realquery.aspx
  
-    Mathematica Example NoteBooks
-    =============================
+## Mathematica Example NoteBooks
 
     Example1.nb
       
@@ -74,8 +69,7 @@
 
     Run a sample SQL Query
 
-    Mathematic Modules
-    ==================
+## Mathematic Modules
 
     The Mathematica Module is SDSS`.m and is initiated by calling
 
