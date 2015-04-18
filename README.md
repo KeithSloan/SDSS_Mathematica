@@ -52,11 +52,12 @@
    The following are useful to check SDSS is working
 
    http://cas.sdss.org/dr12/en/tools/quicklook/setId.asp?id=0x082802f0425a0031
+
    http://cas.sdss.org/dr12/en/tools/quicklook/quickobj.asp?id=588848900446814264
 
 ## Useful SQL Queries
    
-    http://cas.sdss.org/dr12/en/help/docs/realquery.aspx
+   http://cas.sdss.org/dr12/en/help/docs/realquery.aspx
  
 ## Mathematica Example NoteBooks
 
