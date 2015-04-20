@@ -1,0 +1,2 @@
+#/bin/sh
+python sdss-DR6_getSpec.py 102398707621691392

@@ -1,0 +1,2 @@
+#/bin/sh
+python sdss-DR12_getSpec.py 1237652901285003577 650 52143 481 "v5_7_0" 

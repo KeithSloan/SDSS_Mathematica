@@ -51,9 +51,7 @@
 
    The following are useful to check SDSS is working
 
-   http://cas.sdss.org/dr12/en/tools/quicklook/setId.asp?id=0x082802f0425a0031
-
-   http://cas.sdss.org/dr12/en/tools/quicklook/quickobj.asp?id=588848900446814264
+   http://cas.sdss.org/dr12/en/tools/quicklook/quicksummary.aspx?id=0x112d06c1a0530139&spec=0x0a2878485f006800
 
 ## Useful SQL Queries
    
@@ -61,14 +59,17 @@
  
 ## Mathematica Example NoteBooks
 
-    Example1.nb
-      
-    Retrieve a spectrum
-    Plot the retrieved spectrum
+    Example1.nb - Simple Select
+    Example2.nb - Query to get Spectrum of QSO's
+    Example3.nb - Retrieve a spectrum, Plot the retrieved spectrum
 
-    Example2.nb
+## Notes on Mathematica Variables
 
-    Run a sample SQL Query
+   Mathematica variables must begin with a lower case character
+   so the first character of the returned SQL column is converted to
+   lower case.
+
+   Also underlines are not allowed in variables so these are removed. 
 
 ## Mathematic Modules
 
@@ -78,36 +79,43 @@
 
     This makes the following functions available
 
-    GetSpec["spectrum object id"]
+    GetObjSpec["object id"]
 
-    "Gets the CSV values for the spectrum object id"
+    "Gets the CSV values for the object id"
 
     SQLQuery["SQL query"]
 
     "Performs the SQL query "SQL QUERY" and returns Column values as lists
 
-    Python Scripts
-    ==============
+    For details of SQL schema see
+
+    http://cas.sdss.org/dr12/en/help/browser/browser.aspx
+
+## Python Scripts
 
     The mathematica Modules makes use of some Python programs.
 
     These are
 
-        sdss_getSpec.py
-
         "Retrieves a Spectrum"
 
-        sdss_query.py
-    
-        "Performs an SQL Query"
+        sdss-DR12_getSpec.py [specObjID]
 
-    Linux scripts
-    =============
+        "Performs an SQL Query"
+        
+        sdss_query.py [query]
+
+## Tailoring Python scripts
+
+    To change the location where csv files are stored change
+    the value of SpecPath in sdss-DR12_getSpec.py    
+
+## Linux scripts
 
     The following scripts test the function of the python scripts
     They are invoked without parameters
 
-         testGetSpec
+         testGetSpecDR12
          testSimpleSelect
          testGetQSOs 
 

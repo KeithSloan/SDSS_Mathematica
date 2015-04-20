@@ -14,6 +14,6 @@ print("Executing Query : "+sys.argv[1]+"\n")
 
 lines = sqlcl.query(sys.argv[1]).readlines()
 # New versions seem to produce an extra first line with Table so remove
-#print lines[1:]
+print lines[1:]
 os.system("rm "+prefix+xfer+"* 2> /dev/null")
 csv2math(lines[1:])

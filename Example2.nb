@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2018,         56]
-NotebookOptionsPosition[      1745,         42]
-NotebookOutlinePosition[      2083,         57]
-CellTagsIndexPosition[      2040,         54]
+NotebookDataLength[      3621,         92]
+NotebookOptionsPosition[      3162,         73]
+NotebookOutlinePosition[      3502,         88]
+CellTagsIndexPosition[      3459,         85]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,9 +22,11 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"Get", "[", "\"\</home/pi/Mathematica/SDSS/SDSS`.m\>\"", "]"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{"SQLQuery", "[", "\"\<select top 2 ra, dec,z from galaxy\>\"", 
-  "]"}], "\[IndentingNewLine]", "ra", "\[IndentingNewLine]", "dec", "\
-\[IndentingNewLine]", "z"}], "Input",
+ RowBox[{"SQLQuery", "[", 
+  "\"\<select top 2 bestObjID,z,class from SpecObj where class='QSO' and z \
+between 2.5 and 2.7\>\"", 
+  "]"}], "\[IndentingNewLine]", "bestObjID", "\[IndentingNewLine]"}], "Input",\
+
  CellChangeTimes->{{3.637128905088525*^9, 3.63712895938934*^9}, {
    3.637128992178205*^9, 3.637129011472994*^9}, {3.63712907692841*^9, 
    3.637129083396451*^9}, {3.637129686313827*^9, 3.6371296989637613`*^9}, {
@@ -34,14 +36,43 @@ Cell[BoxData[{
    3.637311080945259*^9, 3.6373111137570963`*^9}, {3.637311604631435*^9, 
    3.637311605436666*^9}, {3.6373117117110987`*^9, 3.637311719824665*^9}, {
    3.637311843823031*^9, 3.6373118452138977`*^9}, {3.637312117576396*^9, 
-   3.637312135220182*^9}, 3.637757889567062*^9}],
+   3.637312135220182*^9}, 3.637757889567062*^9, {3.638409802313335*^9, 
+   3.638409973490671*^9}, {3.638410064022444*^9, 3.638410064506939*^9}, {
+   3.638410148238538*^9, 3.638410382134666*^9}, {3.638413263797813*^9, 
+   3.638413327666798*^9}, {3.6384133618850183`*^9, 3.638413393034189*^9}, {
+   3.638413579750332*^9, 3.638413582320285*^9}, {3.6384137915301437`*^9, 
+   3.638413845814435*^9}, {3.638413901271096*^9, 3.6384139191342163`*^9}, {
+   3.638413977771942*^9, 3.638413980851852*^9}, {3.638414028504156*^9, 
+   3.638414031864565*^9}, {3.638414129082838*^9, 3.638414173440467*^9}, {
+   3.63853007567492*^9, 3.63853007898358*^9}, 3.638530118052616*^9, {
+   3.6385302374889917`*^9, 3.638530238910314*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.638411817898697*^9, 3.638411830127655*^9}, {
+   3.638530159889764*^9, 3.6385301603775463`*^9}, 3.638530234468143*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.638409889183228*^9, 3.638410435624303*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.638410357520228*^9, 3.638410358113655*^9}, {
+  3.638410440555498*^9, 3.638410441234762*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.638409898774497*^9, 3.638409901170863*^9}, {
+  3.638410426984674*^9, 3.638410428212802*^9}}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.6373116544169483`*^9, 3.637311658032843*^9}, 
-   3.637311705391453*^9, 3.63731175244075*^9}]
+   3.637311705391453*^9, 3.63731175244075*^9, 3.638409920634989*^9, 
+   3.6384104244087467`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.638409867673398*^9, 3.6384098684593773`*^9}, 
+   3.6384104209733458`*^9}]
 },
 WindowSize->{808, 595},
-WindowMargins->{{Automatic, -111}, {Automatic, 5}},
+WindowMargins->{{Automatic, -117}, {Automatic, -52}},
 FrontEndVersion->"10.0 for Linux ARM (32-bit) (February 3, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -56,8 +87,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1039, 16, 126, "Input"],
-Cell[1600, 38, 141, 2, 30, "Input"]
+Cell[558, 20, 1731, 27, 145, "Input"],
+Cell[2292, 49, 166, 2, 30, "Input"],
+Cell[2461, 53, 90, 1, 30, "Input"],
+Cell[2554, 56, 141, 2, 30, "Input"],
+Cell[2698, 60, 141, 2, 30, "Input"],
+Cell[2842, 64, 191, 3, 30, "Input"],
+Cell[3036, 69, 122, 2, 30, "Input"]
 }
 ]
 *)

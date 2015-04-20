@@ -1,0 +1,2 @@
+#/bin/shell
+python sdss_query.py "select plate,mjd,fiberID,run2d from SpecObj where bestObjID= 1237652901285003577"

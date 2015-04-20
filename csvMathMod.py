@@ -11,7 +11,7 @@ def csv2math(lines):
     for line in lines:
         foo = line.strip('\n\r #')
         striped_lines.append(foo)
-#    print striped_lines
+    print striped_lines
 
     data = []
     for line in lines[1:]:
@@ -39,7 +39,7 @@ def csv2math(lines):
 #               print data[y][x] 
                 fp.write(data[y][x]+"\n")
                 y = y + 1
-            fp.write('\n')
+#            fp.write('\n')
             fp.close()
             x = x + 1
     rp.close()
