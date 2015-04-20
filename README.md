@@ -60,8 +60,9 @@
 ## Mathematica Example NoteBooks
 
     Example1.nb - Simple Select
-    Example2.nb - Query to get Spectrum of QSO's
-    Example3.nb - Retrieve a spectrum, Plot the retrieved spectrum
+    Example2.nb - Select to get objectID's of QSO's
+    Example3.nb - Retrieve a spectrum for a given objectID,
+                  Plot the retrieved spectrum
 
 ## Notes on Mathematica Variables
 
